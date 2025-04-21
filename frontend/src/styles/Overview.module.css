@@ -1,0 +1,135 @@
+/* Overview Page Styles */
+.container {
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #1a202c;
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.adminLink, .streamLink {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.adminLink {
+  background-color: #4299e1;
+  color: white;
+}
+
+.adminLink:hover {
+  background-color: #3182ce;
+}
+
+.streamLink {
+  background-color: #48bb78;
+  color: white;
+}
+
+.streamLink:hover {
+  background-color: #38a169;
+}
+
+.main {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.connectionWarning {
+  background-color: #fff3cd;
+  color: #856404;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ffeeba;
+  border-radius: 0.25rem;
+}
+
+.error {
+  background-color: #fed7d7;
+  color: #822727;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid #feb2b2;
+  border-radius: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.retryButton {
+  background-color: #fc8181;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.retryButton:hover {
+  background-color: #f56565;
+}
+
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+
+.loadingText {
+  font-size: 1.25rem;
+  color: #a0aec0;
+}
+
+.noBoards {
+  background: #2d3748;
+  border-radius: 0.5rem;
+  padding: 3rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.noBoards p {
+  font-size: 1.25rem;
+  color: #a0aec0;
+  margin-bottom: 1.5rem;
+}
+
+.addBoardLink {
+  display: inline-block;
+  background-color: #4299e1;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.addBoardLink:hover {
+  background-color: #3182ce;
+} 

@@ -1,0 +1,688 @@
+/* Player Info Styles */
+.playerInfo {
+  background: #2d3748;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.activePlayer {
+  border: 2px solid #4fd1c5;
+  box-shadow: 0 0 15px rgba(79, 209, 197, 0.5);
+}
+
+.playerHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.playerName {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #fff;
+}
+
+.playerNickname {
+  font-size: 0.875rem;
+  color: #a0aec0;
+}
+
+.scoreContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.score {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.legsWon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.legsLabel {
+  font-size: 0.875rem;
+  color: #a0aec0;
+}
+
+.legsValue {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #4fd1c5;
+}
+
+.winnerBadge {
+  margin-top: 1rem;
+  padding: 0.25rem 0.5rem;
+  background-color: #48bb78;
+  color: white;
+  font-weight: bold;
+  border-radius: 0.25rem;
+  text-align: center;
+}
+
+/* Dart Throws Styles */
+.dartThrowsContainer {
+  background: #1a202c;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.throwsHeader {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #a0aec0;
+  font-size: 0.875rem;
+}
+
+.throwValues {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.throwValue {
+  background: #2d3748;
+  border-radius: 0.25rem;
+  padding: 0.75rem 0.5rem;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.highlightedThrow {
+  background: #2c5282;
+  box-shadow: 0 0 8px rgba(79, 209, 197, 0.5);
+}
+
+.throwScore {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.throwSegment {
+  font-size: 0.875rem;
+  color: #a0aec0;
+  margin-top: 0.25rem;
+}
+
+/* Stats Panel Styles */
+.statsPanel {
+  background: #1a202c;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.statsTitle {
+  color: #a0aec0;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.statLabel {
+  font-size: 0.75rem;
+  color: #a0aec0;
+  margin-bottom: 0.25rem;
+}
+
+.statValue {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Checkout Suggestion Styles */
+.checkoutSuggestion {
+  background: #1a202c;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 3px solid #4fd1c5;
+}
+
+.checkoutTitle {
+  color: #4fd1c5;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.checkoutPath {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.checkoutDart {
+  display: inline-block;
+}
+
+/* Scoreboard Styles */
+.scoreboardContainer {
+  width: 100%;
+  background: #2d3748;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.scoreboardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #1a202c;
+  border-bottom: 1px solid #4a5568;
+}
+
+.matchTitle {
+  color: #fff;
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.matchState {
+  background: #4a5568;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.playersGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.playerColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  font-size: 1.25rem;
+  color: #a0aec0;
+}
+
+/* Overview Grid Styles */
+.overviewGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.boardCard {
+  background: #2d3748;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.boardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #1a202c;
+  border-bottom: 1px solid #4a5568;
+}
+
+.boardName {
+  color: #fff;
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.boardStatus {
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.online {
+  background-color: #c6f6d5;
+  color: #22543d;
+}
+
+.offline {
+  background-color: #fed7d7;
+  color: #822727;
+}
+
+.connecting {
+  background-color: #feebc8;
+  color: #744210;
+}
+
+.boardActions {
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.viewButton, .startButton {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #4299e1;
+  color: white;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.viewButton:hover, .startButton:hover {
+  background: #3182ce;
+}
+
+.startButton {
+  background: #48bb78;
+}
+
+.startButton:hover {
+  background: #38a169;
+}
+
+.noMatch {
+  padding: 2rem;
+  text-align: center;
+  color: #a0aec0;
+}
+
+/* Loading Spinner */
+.spinnerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.spinner {
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  border-top-color: #4fd1c5;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinnerSmall {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.spinnerMedium {
+  width: 3rem;
+  height: 3rem;
+}
+
+.spinnerLarge {
+  width: 5rem;
+  height: 5rem;
+}
+
+.spinnerText {
+  margin-top: 0.75rem;
+  color: #a0aec0;
+  font-size: 0.875rem;
+}
+
+/* Error Display Styles */
+.errorDisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(252, 129, 129, 0.1);
+  border: 1px solid #fc8181;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  max-width: 500px;
+}
+
+.errorIcon {
+  color: #fc8181;
+  margin-bottom: 1rem;
+}
+
+.errorMessage {
+  color: #fc8181;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.errorAction {
+  background-color: #fc8181;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.errorAction:hover {
+  background-color: #f56565;
+}
+
+/* Connection Status Styles */
+.connectionStatus {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.connectionStatusDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.connected {
+  background-color: #4CAF50;
+  box-shadow: 0 0 5px #4CAF50;
+}
+
+.disconnected {
+  background-color: #F44336;
+  box-shadow: 0 0 5px #F44336;
+}
+
+.reconnecting {
+  background-color: #FF9800;
+  box-shadow: 0 0 5px #FF9800;
+  animation: pulse 1.5s infinite;
+}
+
+.error {
+  background-color: #E91E63;
+  box-shadow: 0 0 5px #E91E63;
+}
+
+.failed {
+  background-color: #9C27B0;
+  box-shadow: 0 0 5px #9C27B0;
+}
+
+.connectionStatusLabel {
+  font-size: 12px;
+  color: #666;
+}
+
+.connectionError {
+  display: inline-block;
+  margin-left: 4px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #F44336;
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 14px;
+  cursor: help;
+}
+
+.reconnectButton {
+  padding: 3px 6px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-size: 11px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.reconnectButton:hover {
+  background-color: #1976D2;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Tooltip Styles */
+.tooltip {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.tooltipContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltipContainer:hover .tooltip {
+  opacity: 1;
+}
+
+.connectionError:hover + .tooltip {
+  opacity: 1;
+}
+
+/* Historical Summaries Component Styles */
+.historicalSummaries {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.sectionTitle {
+  font-size: 1.4rem;
+  color: #24292e;
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e1e4e8;
+}
+
+.emptyState {
+  padding: 30px;
+  text-align: center;
+  color: #6a737d;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.retryButton, .refreshButton, .viewSummaryButton, .hideSummaryButton {
+  background-color: #0366d6;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+}
+
+.retryButton:hover, .refreshButton:hover, .viewSummaryButton:hover, .hideSummaryButton:hover {
+  background-color: #0250a0;
+}
+
+.hideSummaryButton {
+  background-color: #6a737d;
+}
+
+.hideSummaryButton:hover {
+  background-color: #444d56;
+}
+
+.matchList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.matchItem {
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s;
+}
+
+.matchItem:hover {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.matchHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid transparent;
+  transition: background-color 0.2s;
+}
+
+.matchHeader:hover {
+  background-color: #f6f8fa;
+}
+
+.matchInfo {
+  flex: 1;
+}
+
+.matchTitle {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #24292e;
+}
+
+.matchDate {
+  display: block;
+  font-size: 0.8rem;
+  color: #6a737d;
+  margin-top: 4px;
+}
+
+.matchScore {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #24292e;
+  margin: 0 15px;
+}
+
+.playerScore {
+  padding: 3px 8px;
+}
+
+.detailsToggle {
+  background: none;
+  border: none;
+  color: #6a737d;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.matchDetails {
+  padding: 15px;
+  background-color: #f6f8fa;
+  border-top: 1px solid #eaecef;
+}
+
+.detailsSection {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.detailLabel {
+  font-weight: 600;
+  color: #6a737d;
+  width: 100px;
+  flex-shrink: 0;
+}
+
+.detailValue {
+  color: #24292e;
+}
+
+.summaryContainer {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #eaecef;
+}
+
+.actionBar {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #e1e4e8;
+} 

@@ -1,0 +1,220 @@
+.adminOverridePanel {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.panelTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.connectionWarning {
+  background-color: #fff3cd;
+  color: #856404;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ffeeba;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+}
+
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid #f5c6cb;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+}
+
+.success {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid #c3e6cb;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #e2e8f0;
+  margin-bottom: 1rem;
+  overflow-x: auto;
+}
+
+.tabButton {
+  padding: 0.75rem 1rem;
+  background: none;
+  border: none;
+  color: #4a5568;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.tabButton:hover {
+  color: #4299e1;
+}
+
+.tabButton.active {
+  color: #4299e1;
+  border-bottom: 2px solid #4299e1;
+}
+
+.tabContent {
+  padding: 1rem 0;
+}
+
+.tabPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Form elements */
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  font-weight: 500;
+  color: #4a5568;
+  font-size: 0.875rem;
+}
+
+.formGroup select,
+.formGroup input {
+  padding: 0.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+
+.formGroup select:focus,
+.formGroup input:focus {
+  outline: none;
+  border-color: #4299e1;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.15);
+}
+
+/* Buttons */
+.actionButton {
+  padding: 0.75rem 1rem;
+  background-color: #4299e1;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  align-self: flex-start;
+  margin-top: 0.5rem;
+}
+
+.actionButton:hover {
+  background-color: #3182ce;
+}
+
+.actionButton:disabled {
+  background-color: #a0aec0;
+  cursor: not-allowed;
+}
+
+.dangerButton {
+  background-color: #f56565;
+}
+
+.dangerButton:hover {
+  background-color: #e53e3e;
+}
+
+.dangerButton:disabled {
+  background-color: #fc8181;
+}
+
+/* Confirmation dialog */
+.confirmationOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.confirmationDialog {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.confirmationDialog h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #2d3748;
+}
+
+.confirmationDialog p {
+  margin-bottom: 1.5rem;
+  color: #4a5568;
+}
+
+.confirmationButtons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+.cancelButton {
+  padding: 0.5rem 1rem;
+  background-color: #e2e8f0;
+  color: #4a5568;
+  border: none;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.cancelButton:hover {
+  background-color: #cbd5e0;
+}
+
+.confirmButton {
+  padding: 0.5rem 1rem;
+  background-color: #f56565;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.confirmButton:hover {
+  background-color: #e53e3e;
+}
+
+.confirmButton:disabled,
+.cancelButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+} 

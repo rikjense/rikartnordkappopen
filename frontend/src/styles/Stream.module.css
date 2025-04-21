@@ -1,0 +1,169 @@
+/* Stream Overlay Styles */
+.streamContainer {
+  width: 100%;
+  height: 100%;
+  font-family: 'Inter', 'Orbitron', sans-serif;
+  color: white;
+  padding: 1rem;
+  background-color: transparent;
+}
+
+.streamGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+  height: 100%;
+}
+
+.streamBoard {
+  background-color: rgba(26, 32, 44, 0.85);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border: 1px solid rgba(74, 85, 104, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.streamHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(74, 85, 104, 0.5);
+}
+
+.streamTitle {
+  font-size: 1.25rem;
+  margin: 0;
+  color: #4fd1c5;
+  font-weight: 600;
+}
+
+.streamMode {
+  background: rgba(66, 153, 225, 0.3);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.streamPlayers {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+.streamPlayer {
+  background-color: rgba(45, 55, 72, 0.7);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.streamActive {
+  border-color: #4fd1c5;
+  box-shadow: 0 0 15px rgba(79, 209, 197, 0.3);
+}
+
+.streamPlayerHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.streamPlayerName {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.streamLegsWon {
+  font-size: 0.875rem;
+  color: #a0aec0;
+}
+
+.streamScore {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+.streamStats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(74, 85, 104, 0.5);
+}
+
+.streamStat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.streamStatLabel {
+  font-size: 0.75rem;
+  color: #a0aec0;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+
+.streamStatValue {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1280px) {
+  .streamGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+/* Transparent background option */
+.transparentBg {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Stream page container */
+.streamPageContainer {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #1a202c;
+}
+
+/* Loading, error and empty states */
+.loadingContainer, .errorContainer, .noMatchesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.errorText, .noMatchesText {
+  color: #a0aec0;
+  font-size: 1.25rem;
+  padding: 1rem;
+  background-color: rgba(26, 32, 44, 0.8);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(74, 85, 104, 0.5);
+}
+
+.errorText {
+  color: #fc8181;
+  border-color: rgba(252, 129, 129, 0.5);
+} 
